@@ -1,6 +1,10 @@
-body{
+html{
   background-color: black;
   color:white;
+}
+body{
+  background-color: linear-gradient(rgba(249, 249, 249, 0.8),rgba(2,2,2,0.5));
+  overflow-x: hidden;
 }
 
 .Navbar{
@@ -90,8 +94,10 @@ bottom: 380px;
   left:-300px;
 }
 .titulo{
+  font-size: 80px;
   position: relative;
-  left: 200px;
+  left: 150px;
+  top: -100px;
   text-shadow: -2px 2px 0 #000,
                 2px 2px 0 #000,
                 1px -1px 0 #000,
@@ -99,6 +105,8 @@ bottom: 380px;
 
 }
 .texto{
+  position: relative;
+  top: -120px;
   max-width: 50vw;
   text-shadow: -1px 1px 0 #000,
                 1px 1px 0 #000,
@@ -111,4 +119,34 @@ bottom: 380px;
   top:25vh;
   width: 100vw;
   height: 60vh;
+}
+
+.logo-container{
+  display: flex;
+  width: auto;
+  height: auto;
+  margin-left: 20px;
+  margin-bottom: -100px;
+  gap:20px;
+  align-items: center;
+}
+.logo{
+  margin-top:20px;
+  width: 130px;
+  filter: hue-rotate(195deg);
+}
+.title-container{
+  margin-top:20px;
+  line-height: 7px;
+}
+
+.title-container > h2{
+  color: rgb(164, 163, 163);
+}
+
+.metal{
+  border:0.5px solid white;
+  width: 100vw;
+  height: 5px;
+  background-image: radial-gradient(circle at 66.49% 78.56%, #3cfcff 0, #4ddcff 25%, #53bcf2 50%, #539dc9 75%, #4e81a3 100%);;
 }

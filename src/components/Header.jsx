@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import {BsChevronCompactRight,BsChevronCompactLeft} from 'react-icons/bs'
 import foto from "../assets/exterior.jpeg"
-import foto2 from "../assets/exterior2.jpeg"
-import foto3 from "../assets/exterior3.jpeg"
+import foto5 from "../assets/exterior5.jpeg"
+import foto4 from "../assets/exterior4.jpeg"
 
 function Header() {
 
@@ -18,11 +18,13 @@ function Header() {
   return (
     <div className="header">
       <div>
+        <div className='metal'></div>
         <div style={{transform:`translateX(-${currentSlide * 100}vw)`}} className="container-slide">
             <img className="image-slide" src={foto} alt='imgOne' loading='priority'/>
-            <img className="image-slide" src={foto2} alt='imgTwo' loading='priority'/>
-            <img className="image-slide" src={foto3} alt='imgThree' loading='priority'/>
+            <img className="image-slide" src={foto4} alt='imgTwo' loading='priority'/>
+            <img className="image-slide" src={foto5} alt='imgThree' loading='priority'/>
         </div>
+        <div className='metal'></div>
         <div style={{transform:`translateX(-${currentSlide * 100}vw)`}} className="content-slide">
           <div className='card'>
             <h1 className='titulo'>primera</h1>
