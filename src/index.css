@@ -28,3 +28,87 @@ body{
                 0.5px -0.5px 0 white,
                 -0.5px -0.5px 0 white;
 }
+
+
+.container-slide {
+  display: flex;
+  width:600vw;
+  height: auto;
+  transition: transform 0.5s;
+}
+.image-slide {
+  width: 100vw;
+  height: 60vh;
+  object-fit: cover;
+}
+.header{
+width: 100vw;
+height: auto;
+overflow-x: hidden;
+margin-top: -80px;
+}
+.controls{
+position: absolute;
+left: 0;
+right: 0;
+margin:20px;
+display: flex;
+justify-content: space-between;
+gap:8px;
+bottom: 380px;
+}
+.button-slide{
+  position: relative;
+  color:gray;
+  width: 40px;
+  height: 340px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.button-slide:hover{
+  color:white;
+  font-weight: bold;
+  background-color: rgba(46, 45, 45, 0.1);
+}
+.button-slide:active{
+  background-color: transparent;
+}
+.paginacion{
+    scale: 4;
+    z-index:5000;
+
+}
+.content-slide {
+  position: absolute;
+  display: flex;
+  width:300vw;
+  height: auto;
+  transition: transform 0.5s;
+  top:200px;
+  left:-300px;
+}
+.titulo{
+  position: relative;
+  left: 200px;
+  text-shadow: -2px 2px 0 #000,
+                2px 2px 0 #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
+
+}
+.texto{
+  max-width: 50vw;
+  text-shadow: -1px 1px 0 #000,
+                1px 1px 0 #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
+}
+.card{
+  position: relative;
+  left: 55vw;
+  top:25vh;
+  width: 100vw;
+  height: 60vh;
+}
