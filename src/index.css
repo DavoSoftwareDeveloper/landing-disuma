@@ -150,3 +150,49 @@ bottom: 380px;
   height: 5px;
   background-image: radial-gradient(circle at 66.49% 78.56%, #3cfcff 0, #4ddcff 25%, #53bcf2 50%, #539dc9 75%, #4e81a3 100%);;
 }
+.galery{
+  width: 100vw;
+}
+.galery-content{
+  width:100vw;
+  margin-top: 100px;
+}
+
+.section{
+  width:95vw;
+  height: auto;
+  display: flex;
+  margin:20px;
+}
+
+.photo-container{
+  display: flex;
+  width:90%;
+  margin-right: 20px;
+}
+.photo-container2{
+  display: flex;
+  width:90%;
+  margin-left: 20px;
+}
+.image{
+  border: 1px solid white;
+  width: 100%;
+  height: auto;
+  margin: 5px;
+}
+.image2{
+  width:220px;
+  height: 95%;
+  object-fit:cover;
+  border: 1px solid white;
+  margin: 5px;
+}
+.image-tall{
+  margin-left: 10px;
+  width:auto;
+  height: auto;
+}
+.details-photo{
+width:90%;
+}
