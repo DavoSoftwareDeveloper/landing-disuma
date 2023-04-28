@@ -2,8 +2,12 @@
 
 function Testimonials() {
   return (
-    <div>
-      Testimonials
+    <div className="testimonials">
+      <div className="flex">
+        <div className="testi"></div>
+        <div className="testi"></div>
+        <div className="testi"></div>
+      </div>
     </div>
   )
 }

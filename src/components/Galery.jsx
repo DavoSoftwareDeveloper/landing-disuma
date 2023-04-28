@@ -6,7 +6,7 @@ function Galery() {
       <div className="galery-content">
           <section className="section">
             <div className="photo-container">
-              <div className="flex">
+              <div>
                 <img className="image" src={foto2} alt="galery-photo" />
                 <img className="image" src={foto2} alt="galery-photo" />
               </div>
@@ -25,7 +25,7 @@ function Galery() {
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum pariatur amet consequuntur, officia tenetur consectetur esse ratione, culpa quidem, molestiae placeat aut! Placeat, deleniti molestias expedita cum est sapiente laudantium.</p>
             </div>
             <div className="photo-container2">
-            <div className="flex">
+            <div>
                 <img className="image" src={foto2} alt="galery-photo" />
                 <img className="image" src={foto2} alt="galery-photo" />
               </div>
