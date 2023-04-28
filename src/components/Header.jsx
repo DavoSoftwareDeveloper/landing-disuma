@@ -27,15 +27,15 @@ function Header() {
         <div className='metal'></div>
         <div style={{transform:`translateX(-${currentSlide * 100}vw)`}} className="content-slide">
           <div className='card'>
-            <h1 className='titulo'>primera</h1>
+            <h1 className='titulo'>Compromiso</h1>
             <p className='texto'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, natus. Amet quis hic officiis et. Veritatis ab repellendus saepe illum nesciunt atque earum iure corporis, eum unde facere harum iste.</p>
           </div>
           <div className='card'>
-            <h1 className='titulo'>segunda</h1>
+            <h1 className='titulo'>Profesionalidad</h1>
             <p className='texto'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, natus. Amet quis hic officiis et. Veritatis ab repellendus saepe illum nesciunt atque earum iure corporis, eum unde facere harum iste.</p>
           </div>
           <div className='card'>
-            <h1 className='titulo'>tercera</h1>
+            <h1 className='titulo'>Dedicación</h1>
             <p className='texto'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, natus. Amet quis hic officiis et. Veritatis ab repellendus saepe illum nesciunt atque earum iure corporis, eum unde facere harum iste.</p>
           </div>
         </div>

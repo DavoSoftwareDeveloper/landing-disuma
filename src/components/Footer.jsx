@@ -6,7 +6,7 @@ import { MdLocationOn } from 'react-icons/md'
 function Footer() {
   return (
     <div className="footer">
-              <div className='metal'></div>
+      <div className='metal'></div>
       <div className="grid">
         {/* ============ LogoIcon Start here ============ */}
         <div>
