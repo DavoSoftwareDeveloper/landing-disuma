@@ -29,7 +29,9 @@ const onSubmit = (e) => {
       <section className='heading'>
         <h2>Contacto</h2>
         <hr className="hr"/>
-      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consequatur delectus blanditiis modi distinctio. Inventore sint corporis asperiores quod saepe veritatis cum sed, provident animi voluptatem dignissimos quasi quae nesciunt.</p>
+      <p> Necesitas un soldador profesional o un especialista en estructuras de hierro? Estás en el sitio adecuado!</p>
+      <p> Tenemos más de 10 años de experiéncia en estructuras de metal.</p>
+      <p> Pide presupuesto sin compromiso!</p>
       </section>
       
       <section className='form'>
@@ -63,7 +65,7 @@ const onSubmit = (e) => {
           </div>
       </form>
       </section>
-        
+        <div id="staff"></div>
       </>
       )
 }

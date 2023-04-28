@@ -4,15 +4,25 @@ function Testimonials() {
   return (
     <div className="testimonials">
       <section className='heading'>
-        <h2>Testimonios</h2>
+        <h2>Reseñas</h2>
         <hr className="hr"/>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. io. Inventore sint corporis.</p>
+        <p> Hecha un vistazo a lo que opinan nuestros clientes.</p>
       </section>
       <div className="flex">
-        <div className="testi"></div>
-        <div className="testi"></div>
-        <div className="testi"></div>
+        <div className="testi">
+          <div className="circle-testi"></div>
+          <div className="text-testi"></div>
+        </div>
+        <div className="testi">
+          <div className="circle-testi"></div>
+          <div className="text-testi"></div>
+        </div>
+        <div className="testi">
+          <div className="circle-testi"></div>
+          <div className="text-testi"></div>
+        </div>
       </div>
+      <div id="contacto"></div>
     </div>
   )
 }

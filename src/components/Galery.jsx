@@ -59,6 +59,7 @@ const prevSlide = () => {
             </div>
           </section>
       </div>
+      <div id="reseñas"></div>
     </div>
   )
 }

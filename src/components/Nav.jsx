@@ -12,11 +12,10 @@ function Nav() {
         </div>
         <div>
           <ul className="Navbar">
-              <li><a href="#about">About</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#work">Work</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#galery">Trabajos</a></li>
+              <li><a href="#reseñas">Reseñas</a></li>
+              <li><a href="#staff">Equipo</a></li>
+              <li><a href="#contacto">Contacto</a></li>
           </ul>
         </div>
     </div>

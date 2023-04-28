@@ -6,7 +6,7 @@ function Trabajador() {
         <section className='heading'>
             <h2>Staff</h2>
             <hr className="hr"/>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p> Conoce a nuestro equipo!</p>
         </section>
             <div className="content-trabajador">
                 <div className="image-trabajador"></div>

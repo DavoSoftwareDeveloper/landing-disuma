@@ -11,7 +11,7 @@ function Footer() {
         {/* ============ LogoIcon Start here ============ */}
         <div>
         <img className='logo' src={logo} alt='logoLight' />
-        <p className='m-3 text-white text-sm tracking-wide'>© Di-Suma</p>
+        <p className='register'>© Di-Suma</p>
         <div className='flex2'>
             <FaFacebook/>
             <FaTwitter />
@@ -22,7 +22,7 @@ function Footer() {
         </div>
         {/* ============ LocateUs Start here ============ */}
         <div>
-            <h2 className=''>Locate us</h2>
+            <h2 className=''>Area de trabajo</h2>
             <div className=''>
                 <p>Mataró, Barcelona</p>
                 <p>Mobile: 635200640</p>
@@ -32,7 +32,7 @@ function Footer() {
         </div>    
         {/* ============ Profile Start here ============ */}
         <div>
-            <h2 className=''> Profile</h2>
+            <h2 className=''> Detalles de contacto</h2>
             <div className=''>
                 <p className='flex2'>
                     <span className='text-lg'><BsPersonFill/></span>my account
