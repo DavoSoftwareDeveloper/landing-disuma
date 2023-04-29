@@ -1,0 +1,118 @@
+.container-slide {
+    display: flex;
+    width:600vw;
+    height: auto;
+    transition: transform 0.5s;
+  }
+  .image-slide {
+    width: 100vw;
+    height: 60vh;
+    object-fit: cover;
+  }
+  .header{
+  width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+  margin-top: -80px;
+  }
+  .controls{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin:20px;
+  display: flex;
+  justify-content: space-between;
+  gap:8px;
+  bottom: 380px;
+  }
+  .button-slide{
+    position: relative;
+    color:gray;
+    width: 40px;
+    height: 340px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .button-slide:hover{
+    color:white;
+    font-weight: bold;
+    background-color: rgba(46, 45, 45, 0.1);
+  }
+  .button-slide:active{
+    background-color: transparent;
+  }
+  .paginacion{
+      scale: 4;
+      z-index:5000;
+  
+  }
+  .content-slide {
+    position: absolute;
+    display: flex;
+    width:300vw;
+    height: auto;
+    transition: transform 0.5s;
+    top:200px;
+    left:-300px;
+  }
+  .titulo{
+    font-size: 80px;
+    position: relative;
+    left: 6%;
+    top: -15%;
+    text-shadow: -2px 2px 0 #000,
+                  2px 2px 0 #000,
+                  1px -1px 0 #000,
+                  -1px -1px 0 #000;
+  
+  }
+  .texto{
+    position: relative;
+    left:6%;
+    top: -120px;
+    max-width: 50vw;
+    text-shadow: -1px 1px 0 #000,
+                  1px 1px 0 #000,
+                  1px -1px 0 #000,
+                  -1px -1px 0 #000;
+  }
+  .card{
+    position: relative;
+    left: 55vw;
+    top:25vh;
+    width: 100vw;
+    height: 60vh;
+  }
+  
+  .logo-container{
+    display: flex;
+    width: auto;
+    height: auto;
+    margin-left: 20px;
+    margin-bottom: -100px;
+    gap:20px;
+    align-items: center;
+  }
+  .logo{
+    margin-top:20px;
+    width: 130px;
+    /* filter: hue-rotate(195deg); */
+  }
+  .title-container{
+    margin-top:20px;
+    line-height: 7px;
+  }
+  
+  .title-container > h2{
+    color: rgb(164, 163, 163);
+  }
+  
+  .metal{
+    border:0.5px solid white;
+    margin-left: -6px;
+    width: 100vw;
+    height: 5px;
+    background-image: radial-gradient(circle at 66.49% 78.56%, #3cfcff 0, #4ddcff 25%, #53bcf2 50%, #539dc9 75%, #4e81a3 100%);;
+  }

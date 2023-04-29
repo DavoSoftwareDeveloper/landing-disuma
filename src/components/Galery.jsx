@@ -1,3 +1,4 @@
+import '../styles/galery.css'
 import foto2 from "../assets/exterior2.jpeg"
 import {HiArrowLeft,HiArrowRight} from 'react-icons/hi'
 import { useState } from "react"

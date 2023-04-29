@@ -1,0 +1,14 @@
+.footer{
+    margin-top: 200px;
+  }
+  .flex2{
+    display: flex;
+    align-items: center;
+    gap:8px;
+  }
+  .grid{
+    margin-left: 10%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }

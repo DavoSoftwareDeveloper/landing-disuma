@@ -1,4 +1,4 @@
-
+import '../styles/testimonials.css'
 
 function Testimonials() {
   return (

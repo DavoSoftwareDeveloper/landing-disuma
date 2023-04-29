@@ -1,3 +1,4 @@
+import '../styles/footer.css'
 import logo from "../assets/welder.png"
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube, FaHome} from 'react-icons/fa'
 import { BsPaypal, BsPersonFill } from 'react-icons/bs'

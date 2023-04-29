@@ -1,3 +1,4 @@
+import '../styles/form.css'
 import { useState } from "react"
 
 
@@ -6,11 +7,11 @@ function Form() {
   const [ formData, setFormData ] = useState({
     name: '',
     email: '',
-    password: '',
-    password2: ''
+    telefono: '',
+    peticion: ''
 })
 
-const {name, email, password, password2 } = formData
+const {name, email, telefono, peticion } = formData
 
 
 const onChange = (e) => {
@@ -50,14 +51,14 @@ const onSubmit = (e) => {
           </div>
           <div className="form-group">
               <label htmlFor="name">Teléfono</label>
-              <input type='password' className='form-control' id='password' 
-              name='password' value={password} placeholder='Introduce tu teléfono'
+              <input type='text' className='form-control' id='telefono' 
+              name='telefono' value={telefono} placeholder='Introduce tu teléfono'
               onChange={onChange} />
           </div>
           <div className="form-group">
               <label htmlFor="name">En qué podemos ayudarte?</label>
-              <textarea type='password' className='form-control' id='password2' 
-              name='password2' value={password2} placeholder='Me gustaría pedir presupuesto sobre...'
+              <textarea type='text' className='form-control' id='peticion' 
+              name='peticion' value={peticion} placeholder='Me gustaría pedir presupuesto sobre...'
               onChange={onChange} />
           </div>
           <div className='form-group'>

@@ -1,0 +1,20 @@
+.trabajador{
+    margin-top:100px;
+    margin:20px;
+  }
+  .content-trabajador{
+    display: flex;
+    gap:20px;
+  }
+  .image-trabajador{
+    border: 1px solid white;
+    width: 40%;
+    height: 500px;
+  }
+  .texto-trabajador{
+    border: 1px solid white;
+    width: 60%;
+    height: 500px;
+  }
+  
+  

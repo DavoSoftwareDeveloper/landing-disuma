@@ -1,4 +1,5 @@
 import logo from "../assets/welder.png"
+import '../styles/nav.css'
 
 function Nav() {
   return (

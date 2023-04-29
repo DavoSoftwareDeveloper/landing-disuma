@@ -1,3 +1,4 @@
+import '../styles/header.css'
 import { useState } from 'react'
 import {BsChevronCompactRight,BsChevronCompactLeft} from 'react-icons/bs'
 import foto from "../assets/exterior.jpeg"

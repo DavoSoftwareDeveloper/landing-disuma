@@ -1,0 +1,29 @@
+
+.testimonials{
+    margin-top: 100px;
+    width:100vw;
+    height: auto;
+  }
+  .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .testi{
+    width:200px;
+    height: 400px;
+  }
+  .circle-testi{
+    position: relative;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    width:150px;
+    height:40%;
+    border: 2px solid rgb(231, 231, 231);
+    border-radius: 50%;
+  }
+  .text-testi{
+    width: 100%;
+    height: 60%;
+    background-color: rgb(200, 199, 199);
+  }
