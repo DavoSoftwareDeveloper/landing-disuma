@@ -1,5 +1,6 @@
 import '../styles/form.css'
 import { useState } from "react"
+import { ToastContainer, toast } from 'react-toastify';
 
 
 function Form() {
@@ -22,6 +23,8 @@ const onChange = (e) => {
 }
 const onSubmit = (e) => {
     e.preventDefault()
+    toast.success("mensaje enviado!")
+    console.log(formData);
 
 
     }
@@ -67,6 +70,14 @@ const onSubmit = (e) => {
       </form>
       </section>
         <div id="staff"></div>
+        <ToastContainer
+          className='toast-position' 
+          autoClose={1000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          rtl={false}
+          theme="dark"
+          />
       </>
       )
 }

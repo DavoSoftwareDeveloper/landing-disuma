@@ -45,3 +45,7 @@
     width: 100vw;
     height: 100px;
   }
+  .toast-position{
+    top:2000px;
+    left:0px;
+  }
