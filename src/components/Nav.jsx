@@ -5,7 +5,7 @@ import '../styles/nav.css'
 
 function Nav() {
 
-  const [activeMenu, setActiveMenu] = useState(true)
+  const [activeMenu, setActiveMenu] = useState(undefined)
   const [screenSize, setScreenSize] = useState(undefined)
   const [search, setSearch] = useState(true)
 

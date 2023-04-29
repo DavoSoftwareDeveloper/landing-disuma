@@ -17,8 +17,8 @@
   .pre-container{
     position: relative;
     display: flex;
-    width:103vw;
-    overflow-x: scroll;
+    width:100vw;
+    overflow-x: hidden;
  
   }
   .photo-container{
@@ -53,7 +53,7 @@
   }
   .image{
     margin: 5px;
-    object-fit: fill;
+    object-fit: cover;
     max-height: 60vh;
     max-width: 283px;
     min-width: 183px;

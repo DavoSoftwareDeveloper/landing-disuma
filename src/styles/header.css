@@ -23,7 +23,8 @@
   display: flex;
   justify-content: space-between;
   gap:8px;
-  bottom: 380px;
+  bottom: 240px;
+  z-index: 9000;
   }
   .button-slide{
     position: relative;
@@ -49,13 +50,22 @@
   
   }
   .content-slide {
-    position: absolute;
+    position: relative;
     display: flex;
     width:300vw;
     height: auto;
     transition: transform 0.5s;
-    top:200px;
-    left:-300px;
+    right: 300px;
+  }
+  
+  .wall-content{
+    position: absolute;
+    width: 100vw;
+    height: 60vh;
+    overflow-x: hidden;
+    z-index: 8001;
+    top:140px;
+    
   }
   .titulo{
     font-size: 80px;

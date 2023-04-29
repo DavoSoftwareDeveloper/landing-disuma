@@ -26,6 +26,7 @@ function Header() {
             <img className="image-slide" src={foto5} alt='imgThree' loading='priority'/>
         </div>
         <div id="galery" className='metal'></div>
+        <div className='wall-content'>
         <div style={{transform:`translateX(-${currentSlide * 100}vw)`}} className="content-slide">
           <div className='card'>
             <h1 className='titulo'>Compromiso</h1>
@@ -39,6 +40,7 @@ function Header() {
             <h1 className='titulo'>Dedicación</h1>
             <p className='texto'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, natus. Amet quis hic officiis et. Veritatis ab repellendus saepe illum nesciunt atque earum iure corporis, eum unde facere harum iste.</p>
           </div>
+        </div>
         </div>
         <div className='controls'>
             <div  onClick={prevSlide} className='button-slide'>
