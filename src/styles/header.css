@@ -1,6 +1,6 @@
 .container-slide {
     display: flex;
-    width:600vw;
+    width:300vw;
     height: auto;
     transition: transform 0.5s;
   }
@@ -86,20 +86,6 @@
     height: 60vh;
   }
   
-  .logo-container{
-    display: flex;
-    width: auto;
-    height: auto;
-    margin-left: 20px;
-    margin-bottom: -100px;
-    gap:20px;
-    align-items: center;
-  }
-  .logo{
-    margin-top:20px;
-    width: 130px;
-    /* filter: hue-rotate(195deg); */
-  }
   .title-container{
     margin-top:20px;
     line-height: 7px;
@@ -109,10 +95,27 @@
     color: rgb(164, 163, 163);
   }
   
-  .metal{
-    border:0.5px solid white;
-    margin-left: -6px;
-    width: 100vw;
-    height: 5px;
-    background-image: radial-gradient(circle at 66.49% 78.56%, #3cfcff 0, #4ddcff 25%, #53bcf2 50%, #539dc9 75%, #4e81a3 100%);;
+
+  @media screen and (max-width: 700px){
+    .titulo{
+      font-size: 50px;
+      position: relative;
+      left: 29%;
+      top: -15%;
+      text-shadow: -2px 2px 0 #000,
+                    2px 2px 0 #000,
+                    1px -1px 0 #000,
+                    -1px -1px 0 #000;
+    
+    }
+    .texto{
+      position: relative;
+      left:32%;
+      top: -120px;
+      max-width: 50vw;
+      text-shadow: -1px 1px 0 #000,
+                    1px 1px 0 #000,
+                    1px -1px 0 #000,
+                    -1px -1px 0 #000;
+    }
   }

@@ -21,7 +21,7 @@ function Nav() {
 
 
   useEffect(()=>{
-    if(screenSize <= 900){
+    if(screenSize <= 800){
       setActiveMenu(false)
     } else {
       setActiveMenu(true)
@@ -33,7 +33,7 @@ function Nav() {
   const handleMenu = () => {
     setSearch( prev => !prev)
   }
-console.log(search)
+
   return (
     <div className="nav">
         <div className="logo-container">

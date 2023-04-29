@@ -1,8 +1,8 @@
 import '../styles/footer.css'
 import logo from "../assets/welder.png"
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube, FaHome} from 'react-icons/fa'
-import { BsPaypal, BsPersonFill } from 'react-icons/bs'
-import { MdLocationOn } from 'react-icons/md'
+// import { BsPaypal, BsPersonFill } from 'react-icons/bs'
+// import { MdLocationOn } from 'react-icons/md'
 
 function Footer() {
   return (
@@ -23,16 +23,15 @@ function Footer() {
         </div>
         {/* ============ LocateUs Start here ============ */}
         <div>
-            <h2 className=''>Area de trabajo</h2>
+            <h2 className=''>Detalles de contacto</h2>
             <div className=''>
                 <p>Mataró, Barcelona</p>
-                <p>Mobile: 635200640</p>
-                <p>Phone: 666204645</p>
-                <p>e-mail: bazzar@gmail.com</p>
+                <p>Mobil: 659 43 79 99</p>
+                <p>e-mail: info@davodeveloper.com</p>
             </div>
         </div>    
         {/* ============ Profile Start here ============ */}
-        <div>
+        {/* <div>
             <h2 className=''> Detalles de contacto</h2>
             <div className=''>
                 <p className='flex2'>
@@ -48,7 +47,7 @@ function Footer() {
                     <span className='text-lg'><MdLocationOn /></span>help & support
                 </p>
             </div>     
-        </div>
+        </div> */}
         {/* ============ Subscribe Start here ============ */}
       </div>
     </div>

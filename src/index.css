@@ -23,3 +23,10 @@ body{
   margin-top:-10px;
   border:1px solid #366483;
 }
+.metal{
+  border:0.5px solid white;
+  margin-left: -0.5px;
+  width: 100vw;
+  height: 5px;
+  background-image: radial-gradient(circle at 66.49% 78.56%, #3cfcff 0, #41bfdf 15%, #1c5978 50%, #539dc9 75%, #4e81a3 100%);;
+}

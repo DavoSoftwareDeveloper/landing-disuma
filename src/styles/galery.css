@@ -14,29 +14,64 @@
     margin:20px;
     margin-bottom: 40px;
   }
-  
-  .photo-container{
+  .pre-container{
+    position: relative;
     display: flex;
-    width:90%;
-    margin-right: 20px;
+    width:103vw;
+    overflow-x: scroll;
+ 
   }
-  .photo-container2{
+  .photo-container{
+    position: relative;
     display: flex;
-    width:90%;
-    margin-left: 20px;
+    gap:10px;
+    width:300vw;
+    transition: transform 0.5s;
+  }
+  .container{
+    display: flex;
+    position:relative;
+    width:50vw;
+    height: 35.5vh;
+  }
+
+
+  .photo-container2{
+    position: relative;
+    display: flex;
+    gap:10px;
+    width:300vw;
+    transition: transform 0.5s;
+  }
+
+  .image-frame > img{
+    width: 100%;
+    height: 160px;
+    margin: 5px;
+    border: 1px solid white;
+
   }
   .image{
-    border: 1px solid white;
-    width: 100%;
-    height: auto;
     margin: 5px;
+    object-fit: fill;
+    max-height: 60vh;
+    max-width: 283px;
+    min-width: 183px;
   }
+  .image:hover{
+    scale: 1.02;
+  }
+
   .image2{
     width:220px;
     height: 95%;
     object-fit:cover;
     border: 1px solid white;
     margin: 5px;
+  }
+
+  .image2:hover{
+    scale: 1.02;
   }
   .image-tall{
     margin-left: 10px;
@@ -45,26 +80,66 @@
   }
   .details-photo{
   width:90%;
+  margin-left: 20px;
   }
   .details-photo > p{
     color:rgb(213, 211, 211);
   }
+  
   
   .galery-pages{
     margin-top: 90px;
     width:40px;
     height: 40px;
     border: 1px solid white;
+    cursor:pointer;
+  }
+  .galery-pages:hover{
+    background-color: gray;
   }
   .galery-pages-left{
-    margin-left: 91%;
+    margin-left: 85%;
     margin-top: 88px;
     width:40px;
     height: 40px;
     border: 1px solid white;
+  }
+  .galery-pages-left:hover{
+    background-color: gray;
   }
   .arrow{
     margin-top:12px;
     margin-left:12px;
   }
   
+  @media screen and (max-width: 700px){
+    .section{
+      position: relative;
+      flex-direction: column;
+    }
+
+    .container{
+      display: flex;
+      position:relative;
+      width:90vw;
+      height: 35.5vh;
+      margin-right: 10px;
+    }
+    .galery-content{
+      position:relative;
+    }
+    .galery-pages{
+        position:absolute;
+        top:270px;
+        left:5px;
+    }
+    .galery-pages-left{
+      position:absolute;
+      top:270px;
+      left:-400px;
+  }
+    .details-photo{
+      margin-top: 50px;
+    }
+
+  }

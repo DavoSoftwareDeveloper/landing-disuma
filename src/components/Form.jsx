@@ -57,7 +57,7 @@ const onSubmit = (e) => {
           </div>
           <div className="form-group">
               <label htmlFor="name">En qué podemos ayudarte?</label>
-              <textarea type='text' className='form-control' id='peticion' 
+              <textarea type='text' className='form-control2' id='peticion' 
               name='peticion' value={peticion} placeholder='Me gustaría pedir presupuesto sobre...'
               onChange={onChange} />
           </div>

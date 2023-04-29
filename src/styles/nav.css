@@ -1,4 +1,19 @@
 
+.logo-container{
+  display: flex;
+  width: auto;
+  height: auto;
+  margin-left: 20px;
+  margin-bottom: -100px;
+  gap:20px;
+  align-items: center;
+}
+.logo{
+  margin-top:20px;
+  width: 130px;
+  /* filter: hue-rotate(195deg); */
+}
+  
   .Navbar{
     position: relative;
     top:-50px;
