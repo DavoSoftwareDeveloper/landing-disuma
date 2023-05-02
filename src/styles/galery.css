@@ -180,4 +180,9 @@
       height: 95%;
       border: 1px solid white;
     }
+    .image-tall{
+      margin-left: 10px;
+      width:60vh;
+      max-height: 44.5vh;
+    }
   }
