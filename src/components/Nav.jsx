@@ -30,9 +30,31 @@ function Nav() {
   
 
 
-  const handleMenu = () => {
+  const handleMenu = (e) => {
     setSearch( prev => !prev)
   }
+  console.log(search)
+
+  useEffect(()=>{
+    if ( !search ){
+        gsap.set('#menu', {
+          duration:0.5,
+          x:"1000px",
+        })
+      gsap.to('#menu', {
+        duration:1,
+        x:"0px",
+      })
+    }
+    else{
+      gsap.to('#menu', {
+        duration:1,
+        x:"1000px",
+      })
+    }
+
+
+  },[search])
 
   return (
     <div className="nav">
@@ -54,14 +76,14 @@ function Nav() {
           </>) : (<div className="container-nav">
           <AiOutlineMenu className="menu-nav" onClick={handleMenu}/>
           <div className="flexCol">
-            <ul className={search ? "hidden" : "show"}>
-                <li><a href="#galery">Trabajos</a></li>
+            <ul id="menu" className="show">
+                <li><a onClick={handleMenu} href="#galery">Trabajos</a></li>
                 <hr />
-                <li><a href="#reseñas">Reseñas</a></li>
+                <li><a onClick={handleMenu} href="#reseñas">Reseñas</a></li>
                 <hr />
-                <li><a href="#staff">Equipo</a></li>
+                <li><a onClick={handleMenu} href="#staff">Equipo</a></li>
                 <hr />
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a onClick={handleMenu} href="#contacto">Contacto</a></li>
                 <hr />
             </ul> 
           </div>
