@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import logo from "../assets/welder.png"
+import logo from "../assets/welder-logo.png"
 import { AiOutlineMenu } from 'react-icons/ai';
 import '../styles/nav.css'
 
