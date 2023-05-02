@@ -1,7 +1,9 @@
 html{
+  width: 100vw;
   background: linear-gradient(to left,#1a1a1a, transparent,#2c2c2c);
   background-color: black;
   color:white;
+  overflow-x: hidden;
 }
 body{
   overflow-x: hidden;
@@ -13,8 +15,8 @@ body{
   margin-top: 100px;
 }
 .heading > p {
-  margin-left:25%;
-  width: 50%;
+  margin-left:17%;
+  width: 70%;
   color:rgb(213, 211, 211);
 }
 

@@ -24,7 +24,7 @@
   justify-content: space-between;
   gap:8px;
   bottom: 240px;
-  z-index: 9000;
+  z-index: 6000;
   }
   .button-slide{
     position: relative;
@@ -46,7 +46,7 @@
   }
   .paginacion{
       scale: 4;
-      z-index:5000;
+      z-index:4000;
   
   }
   .content-slide {
@@ -62,8 +62,8 @@
     position: absolute;
     width: 100vw;
     height: 60vh;
-    overflow-x: hidden;
-    z-index: 8001;
+    overflow: hidden;
+    z-index: 3001;
     top:140px;
     
   }
@@ -99,10 +99,10 @@
 
   @media screen and (max-width: 700px){
     .titulo{
-      font-size: 50px;
+      font-size: 40px;
       position: relative;
-      left: 29%;
-      top: -15%;
+      left: 45%;
+      top: 10%;
       text-shadow: -2px 2px 0 #000,
                     2px 2px 0 #000,
                     1px -1px 0 #000,
@@ -111,9 +111,9 @@
     }
     .texto{
       position: relative;
-      left:32%;
-      top: -120px;
-      max-width: 50vw;
+      left:41%;
+      top: 40px;
+      max-width: 70vw;
       text-shadow: -1px 1px 0 #000,
                     1px 1px 0 #000,
                     1px -1px 0 #000,

@@ -117,13 +117,18 @@
       position: relative;
       flex-direction: column;
     }
-
+    .pre-container{
+      position: relative;
+      display: flex;
+      width:100vw;
+      overflow: hidden;
+    }
     .container{
       display: flex;
       position:relative;
-      width:90vw;
-      height: 35.5vh;
-      margin-right: 10px;
+      height: auto;
+      margin-right: 253px;
+      gap:80px
     }
     .galery-content{
       position:relative;
@@ -135,11 +140,33 @@
     }
     .galery-pages-left{
       position:absolute;
-      top:270px;
-      left:-400px;
+      top:275px;
+      left:-298px;
   }
     .details-photo{
       margin-top: 50px;
     }
+    .photo-container2{
+      position: relative;
+      display: flex;
+      width:200vw;
+      transition: transform 0.5s;
+    }
 
+    .image-frame{
+      width: 30vw;
+    }
+    .image-container{
+      width: 30vw;
+    }
+
+    .image{
+      width: 20vw;
+      max-height: 20vh;
+    }
+    .image2{
+      max-width:30vw;
+      height: 95%;
+      border: 1px solid white;
+    }
   }

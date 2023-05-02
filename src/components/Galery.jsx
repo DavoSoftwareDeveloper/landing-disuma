@@ -49,7 +49,7 @@ function Galery() {
       <div className="galery-content">
         <section className="section">
           <div className='pre-container'>
-            <div style={activeMenu ? {transform: `translateX(-${currentSlide * 50}vw)`}:{transform: `translateX(-${currentSlide * 90}vw)`} } className="photo-container">
+            <div style={activeMenu ? {transform: `translateX(-${currentSlide * 50}vw)`}:{transform: `translateX(-${currentSlide * 120}vw)`} } className="photo-container">
               <div className="container">
                 <div className='image-container'>
                   <div className='image-frame'>
@@ -130,7 +130,7 @@ function Galery() {
         ) : ( 
         <section className="section">
           <div className='pre-container'>
-            <div style={{transform: `translateX(-${currentSlide2 * 90}vw)`} } className="photo-container2">
+            <div style={{transform: `translateX(-${currentSlide2 * 120}vw)`} } className="photo-container2">
               <div className="container">
                 <div className='image-container'>
                   <div className='image-frame'>
