@@ -1,8 +1,14 @@
 import '../styles/galery.css'
+import foto1 from "../assets/exterior.jpeg"
 import foto2 from "../assets/exterior2.jpeg"
 import foto3 from "../assets/exterior3.jpeg"
 import foto4 from "../assets/exterior4.jpeg"
 import foto5 from "../assets/exterior5.jpeg"
+import foto6 from "../assets/escalera.jpeg"
+import estructura from "../assets/estructura.jpeg"
+import foto8 from "../assets/structura2.jpeg"
+import foto9 from "../assets/armario.jpeg"
+import foto10 from "../assets/mesa.jpeg"
 import { HiArrowLeft, HiArrowRight } from 'react-icons/hi'
 import { useEffect, useState } from "react"
 
@@ -11,6 +17,8 @@ function Galery() {
   const [currentSlide2, setCurrentSlide2] = useState(0)
   const [activeMenu, setActiveMenu] = useState(true)
   const [screenSize, setScreenSize] = useState(undefined)
+
+
 
   useEffect(()=>{
     const handleResize = () => setScreenSize(window.innerWidth)
@@ -37,7 +45,6 @@ function Galery() {
   const prevSlide = () => {
     setCurrentSlide2(currentSlide2 === 1 ? 0 : (prev) => prev + 1)
   }
-
 
   return (
     <div className="galery">
@@ -66,14 +73,14 @@ function Galery() {
               <div className="container">
                 <div>
                   <div className='image-frame'>
-                    <img className="image" src={foto2} alt="galery-photo" />
+                    <img className="image" src={foto4} alt="galery-photo" />
                   </div>
                   <div className='image-frame'>
                     <img className="image" src={foto2} alt="galery-photo" />
                   </div>
                 </div>
                 <div className="image-tall">
-                  <img className="image2" src={foto2} alt="galery-photo" />
+                  <img className="image2" src={foto6} alt="galery-photo" />
                 </div>
               </div>
             </div>
@@ -101,27 +108,27 @@ function Galery() {
               <div className="container">
                 <div className='image-container'>
                   <div className='image-frame'>
-                    <img className="image" src={foto3} alt="galery-photo" />
+                    <img className="image" src={foto8} alt="galery-photo" />
                   </div>
                   <div className='image-frame'>
                     <img className="image" src={foto3} alt="galery-photo" />
                   </div>
                 </div>
                 <div className="image-tall">
-                  <img className="image2" src={foto3} alt="galery-photo" />
+                  <img className="image2" src={foto1} alt="galery-photo" />
                 </div>
               </div>
               <div className="container">
                 <div>
                   <div className='image-frame'>
-                    <img className="image" src={foto2} alt="galery-photo" />
+                    <img className="image" src={estructura} alt="galery-photo" />
                   </div>
                   <div className='image-frame'>
-                    <img className="image" src={foto2} alt="galery-photo" />
+                    <img className="image" src={foto10} alt="galery-photo" />
                   </div>
                 </div>
                 <div className="image-tall">
-                  <img className="image2" src={foto2} alt="galery-photo" />
+                  <img className="image2" src={foto9} alt="galery-photo" />
                 </div>
               </div>
             </div>
@@ -134,27 +141,27 @@ function Galery() {
               <div className="container">
                 <div className='image-container'>
                   <div className='image-frame'>
-                    <img className="image" src={foto3} alt="galery-photo" />
+                    <img className="image" src={foto8} alt="galery-photo" />
                   </div>
                   <div className='image-frame'>
                     <img className="image" src={foto3} alt="galery-photo" />
                   </div>
                 </div>
                 <div className="image-tall">
-                  <img className="image2" src={foto3} alt="galery-photo" />
+                  <img className="image2" src={foto1} alt="galery-photo" />
                 </div>
               </div>
               <div className="container">
                 <div>
                   <div className='image-frame'>
-                    <img className="image" src={foto2} alt="galery-photo" />
+                    <img className="image" src={estructura} alt="galery-photo" />
                   </div>
                   <div className='image-frame'>
-                    <img className="image" src={foto2} alt="galery-photo" />
+                    <img className="image" src={foto10} alt="galery-photo" />
                   </div>
                 </div>
                 <div className="image-tall">
-                  <img className="image2" src={foto2} alt="galery-photo" />
+                  <img className="image2" src={foto9} alt="galery-photo" />
                 </div>
               </div>
             </div>

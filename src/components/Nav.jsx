@@ -7,7 +7,7 @@ function Nav() {
 
   const [activeMenu, setActiveMenu] = useState(undefined)
   const [screenSize, setScreenSize] = useState(undefined)
-  const [search, setSearch] = useState(true)
+  const [search, setSearch] = useState(false)
 
   useEffect(()=>{
     const handleResize = () => setScreenSize(window.innerWidth)
@@ -30,16 +30,15 @@ function Nav() {
   
 
 
-  const handleMenu = (e) => {
+  const handleMenu = () => {
     setSearch( prev => !prev)
   }
-  console.log(search)
 
   useEffect(()=>{
     if ( !search ){
         gsap.set('#menu', {
           duration:0.5,
-          x:"1000px",
+          x:"-1000px",
         })
       gsap.to('#menu', {
         duration:1,
@@ -49,11 +48,9 @@ function Nav() {
     else{
       gsap.to('#menu', {
         duration:1,
-        x:"1000px",
+        x:"-1000px",
       })
     }
-
-
   },[search])
 
   return (
@@ -76,7 +73,7 @@ function Nav() {
           </>) : (<div className="container-nav">
           <AiOutlineMenu className="menu-nav" onClick={handleMenu}/>
           <div className="flexCol">
-            <ul id="menu" className="show">
+            <ul id="menu" className={"show"}>
                 <li><a onClick={handleMenu} href="#galery">Trabajos</a></li>
                 <hr />
                 <li><a onClick={handleMenu} href="#reseñas">Reseñas</a></li>
