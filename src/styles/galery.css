@@ -50,12 +50,10 @@
     margin: 5px;
     border: 1px solid white;
   }
-  .image-container{
-    width: fit-content;
-    height: ;
-  }
+
 
   .image{
+    min-width: 190px;
     object-fit: cover;
   }
   
