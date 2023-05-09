@@ -1,8 +1,6 @@
 import '../styles/footer.css'
 import logo from "../assets/welder.png"
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube, FaHome} from 'react-icons/fa'
-// import { BsPaypal, BsPersonFill } from 'react-icons/bs'
-// import { MdLocationOn } from 'react-icons/md'
 
 function Footer() {
   return (
@@ -30,26 +28,6 @@ function Footer() {
             <FaHome />
         </div>
         </div>
-
-        {/* ============ Profile Start here ============ */}
-        {/* <div>
-            <h2 className=''> Detalles de contacto</h2>
-            <div className=''>
-                <p className='flex2'>
-                    <span className='text-lg'><BsPersonFill/></span>my account
-                </p>
-                <p className='flex2'>
-                    <span className='text-lg'><BsPaypal/></span>checkout
-                </p>
-                <p className='flex2'>
-                    <span className='text-lg'><FaHome/></span>order tracking
-                </p>
-                <p className='flex2'>
-                    <span className='text-lg'><MdLocationOn /></span>help & support
-                </p>
-            </div>     
-        </div> */}
-        {/* ============ Subscribe Start here ============ */}
       </div>
     </div>
   )

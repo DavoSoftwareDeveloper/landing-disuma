@@ -121,5 +121,8 @@
       top:30px;
       z-index: 8000;
     }
+    #menu{
+      margin-left: 10px;
+    }
     
   }
