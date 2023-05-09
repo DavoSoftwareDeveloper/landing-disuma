@@ -8,13 +8,27 @@
   }
   .image-trabajador{
     border: 1px solid white;
-    width: 60%;
-    height: 500px;
+    width: 40%;
+    height: 300px;
+    border-radius: 10px;
   }
   .texto-trabajador{
     border: 1px solid white;
-    width: 40%;
-    height: 500px;
+    width: 60%;
+    height: 300px;
+    border-radius: 10px;
   }
   
+  .image-trabajador-movil{
+    border: 1px solid white;
+    width: 40%;
+    height: 150px;
+    border-radius: 10px;
+  }
+  .texto-trabajador-movil{
+    border: 1px solid white;
+    width: 60%;
+    height: 150px;
+    border-radius: 10px;
+  }
   

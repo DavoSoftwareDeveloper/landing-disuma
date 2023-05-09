@@ -18,6 +18,7 @@ function Header() {
     }
   return (
     <div className="header">
+      <br /> <br />
       <div>
         <div className='metal'></div>
         <div style={{transform:`translateX(-${currentSlide * 100}vw)`}} className="container-slide">
@@ -29,16 +30,16 @@ function Header() {
         <div className='wall-content'>
         <div style={{transform:`translateX(-${currentSlide * 100}vw)`}} className="content-slide">
           <div className='card'>
-            <h1 className='titulo'>Compromiso</h1>
-            <p className='texto'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, natus. Amet quis hic officiis et. Veritatis ab repellendus saepe illum nesciunt atque earum iure corporis, eum unde facere harum iste.</p>
+            <h1 className='titulo'>Precisión</h1>
+            <p className='texto'>Es esencial trabajar al milímetro para evitar futuros problemas o retrasos, una buena medición garantiza el éxito de cualquier estructura.</p>
           </div>
           <div className='card'>
-            <h1 className='titulo'>Profesionalidad</h1>
-            <p className='texto'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, natus. Amet quis hic officiis et. Veritatis ab repellendus saepe illum nesciunt atque earum iure corporis, eum unde facere harum iste.</p>
+            <h1 className='titulo'>Acabados</h1>
+            <p className='texto'>En los acabados se puede ver el nivel de pasión, dedicación y compromiso con el proyecto. Hablan de la persona o empresa que los realiza, si son verdaderos artesanos o no.</p>
           </div>
           <div className='card'>
-            <h1 className='titulo'>Dedicación</h1>
-            <p className='texto'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, natus. Amet quis hic officiis et. Veritatis ab repellendus saepe illum nesciunt atque earum iure corporis, eum unde facere harum iste.</p>
+            <h1 className='titulo'>Detalles</h1>
+            <p className='texto'>Ningún trabajo es exáctamente igual a otro. La capacidad de adaptarse a cualquier detalle o requerimiento es necesaria para que los proyectos salgan adelante en los tiempos requeridos.</p>
           </div>
         </div>
         </div>

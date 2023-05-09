@@ -33,6 +33,7 @@
     position:relative;
     width:50vw;
     height: auto;
+    gap: 10px;
   }
 
 
@@ -62,7 +63,7 @@
   }
 
   .image2{
-    width:220px;
+    width: 280px;
     height: 95%;
     object-fit:cover;
     border: 1px solid white;
@@ -73,9 +74,13 @@
     scale: 1.02;
   }
   .image-tall{
-    margin-left: 10px;
     width:auto;
-    height: 36vh;
+    max-width: 30vw;
+    height: 44.5vh;
+  }
+  .image-tall-2{
+    width: 283px;
+    height: 44.5vh;
   }
   .details-photo{
   width:90%;
@@ -120,6 +125,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .modal{
+    position: absolute;
+    bottom: -100px;
+    width:100vw;
+    height: 50vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+   
+  }
+  .image-modal{
+    min-width: 190px;
+    min-height: 350px;
+    object-fit: contain;
+    margin-right: 400px;
+    margin-bottom: 150px;
+  }
+  .image-modal-2{
+    display: inline;
+    object-fit: cover;
+    scale:0.38;
+    padding-right: 2920px;
   }
   
   @media screen and (max-width: 700px){
@@ -181,7 +211,43 @@
       border: 1px solid white;
     }
     .image-tall{
-      margin-left: 10px;
       height: 44vh;
+    }
+
+    .showModal{
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(2,2,2,0.5);
+      z-index: 8000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .modal{
+      position: absolute;
+      bottom: -100px;
+      width:100vw;
+      height: 70vh;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+     
+    }
+    .image-modal{
+      min-width: 190px;
+      min-height: 350px;
+      object-fit: content;
+      margin-top:150px;
+      margin-left: 300px;
+      scale: 3;
+    }
+    .image-modal-2{
+      display: inline;
+      object-fit: cover;
+      scale:0.34;
+      padding-right: 1300px;
     }
   }

@@ -19,6 +19,25 @@ function Galery() {
   const [screenSize, setScreenSize] = useState(undefined)
 
 
+  const Image = ({src, tall}) => {
+    const [show, setShow] = useState(false)
+
+    return (
+      <>
+      {show ? (
+        <>
+        <div onClick={()=> setShow(prev => !prev)} className='modal'>
+        <img className={tall ? "image-modal-2" : "image-modal"} src={src} alt="galery-photo" />
+        </div>
+        </>
+        ) : (
+          <>
+          <img onClick={()=> setShow(prev => !prev)} className={tall ? "image2" : "image"} src={src} alt="galery-photo" />
+          </>
+          )}
+      </>
+    )
+  }
 
   useEffect(()=>{
     const handleResize = () => setScreenSize(window.innerWidth)
@@ -51,7 +70,8 @@ function Galery() {
       <section className='heading'>
         <h2>Galería de trabajos</h2>
         <hr className="hr" />
-        <p> Tenemos experiencia en una gran cantidad de...</p>
+        <p> Tenemos experiencia en una gran cantidad de trabajos de cerrajería.</p>
+        <p> Tanto en hierro como en inoxidable.</p>
       </section>
       <div className="galery-content">
         <section className="section">
@@ -60,34 +80,35 @@ function Galery() {
               <div className="container">
                 <div className='image-container'>
                   <div className='image-frame'>
-                    <img className="image" src={foto2} alt="galery-photo" />
+                    <Image src={foto2} />
                   </div>
                   <div className='image-frame'>
-                    <img className="image" src={foto4} alt="galery-photo" />
+                  <Image src={foto4} />
                   </div>
                 </div>
                 <div className="image-tall">
-                  <img className="image2" src={foto5} alt="galery-photo" />
+                <Image src={foto5} tall="tall" />
                 </div>
               </div>
               <div className="container">
                 <div>
                   <div className='image-frame'>
-                    <img className="image" src={foto4} alt="galery-photo" />
+                    <Image src={foto4} />
                   </div>
                   <div className='image-frame'>
-                    <img className="image" src={foto2} alt="galery-photo" />
+                    <Image src={foto2} />
                   </div>
                 </div>
                 <div className="image-tall">
-                  <img className="image2" src={foto6} alt="galery-photo" />
+                <Image src={foto6} tall="tall" />
                 </div>
               </div>
             </div>
           </div>
           <div className="details-photo">
             <h2>Barandillas y escaleras</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum pariatur amet consequuntur, officia tenetur consectetur esse ratione, culpa quidem, molestiae placeat aut! Placeat, deleniti molestias expedita cum est sapiente laudantium.</p>
+            <p>Realizamos todo tipo de escaleras y barandilas a medida, nos amoldamos a cualquier requerimiento.</p>
+            <p>Se realiza primeramente un estudio para determinar si el espacio cumple con las medidas necesarias.</p>
             <div onClick={nextSlide} className="galery-pages">
               <HiArrowRight className='arrow' />
             </div>
@@ -98,7 +119,8 @@ function Galery() {
         <section className="section">
           <div className="details-photo">
             <h2>Contención y estructuras</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum pariatur amet consequuntur, officia tenetur consectetur esse ratione, culpa quidem, molestiae placeat aut! Placeat, deleniti molestias expedita cum est sapiente laudantium.</p>
+            <p>Tenemos un equipo homologado en soldaduras de estructuras</p>
+            <p>Pequeñas estructuras de altillo o refuerzos, jardineras de diseño chapa corte, vallas, botelleros de tipo industrial.</p>
             <div onClick={prevSlide} className="galery-pages-left">
               <HiArrowLeft className='arrow' />
             </div>
@@ -108,27 +130,27 @@ function Galery() {
               <div className="container">
                 <div className='image-container'>
                   <div className='image-frame'>
-                    <img className="image" src={foto8} alt="galery-photo" />
+                  <Image src={foto8} />
                   </div>
                   <div className='image-frame'>
-                    <img className="image" src={foto3} alt="galery-photo" />
+                  <Image src={foto3} />
                   </div>
                 </div>
                 <div className="image-tall">
-                  <img className="image2" src={foto1} alt="galery-photo" />
+                <Image src={foto1} tall="tall" />
                 </div>
               </div>
               <div className="container">
                 <div>
                   <div className='image-frame'>
-                    <img className="image" src={estructura} alt="galery-photo" />
+                  <Image src={estructura} />
                   </div>
                   <div className='image-frame'>
-                    <img className="image" src={foto10} alt="galery-photo" />
+                  <Image src={foto10} />
                   </div>
                 </div>
-                <div className="image-tall">
-                  <img className="image2" src={foto9} alt="galery-photo" />
+                <div className="image-tall-2">
+                <Image src={foto9} tall="tall" />
                 </div>
               </div>
             </div>
@@ -141,40 +163,164 @@ function Galery() {
               <div className="container">
                 <div className='image-container'>
                   <div className='image-frame'>
-                    <img className="image" src={foto8} alt="galery-photo" />
+                  <Image src={foto8} />
                   </div>
                   <div className='image-frame'>
-                    <img className="image" src={foto3} alt="galery-photo" />
+                  <Image src={foto3} />
                   </div>
                 </div>
                 <div className="image-tall">
-                  <img className="image2" src={foto1} alt="galery-photo" />
+                <Image src={foto1} tall="tall" />
                 </div>
               </div>
               <div className="container">
-                <div>
+                <div className='image-container'>
                   <div className='image-frame'>
-                    <img className="image" src={estructura} alt="galery-photo" />
+                  <Image src={estructura} />
                   </div>
                   <div className='image-frame'>
-                    <img className="image" src={foto10} alt="galery-photo" />
+                  <Image src={foto10} />
                   </div>
                 </div>
                 <div className="image-tall">
-                  <img className="image2" src={foto9} alt="galery-photo" />
+                <Image src={foto9} tall="tall" />
                 </div>
               </div>
             </div>
           </div>
           <div className="details-photo">
             <h2>Contención y estructuras</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum pariatur amet consequuntur, officia tenetur consectetur esse ratione, culpa quidem, molestiae placeat aut! Placeat, deleniti molestias expedita cum est sapiente laudantium.</p>
+            <p>Pequeñas estructuras de altillo o refuerzos, jardineras de diseño chapa corte, vallas, botelleros de tipo industrial.</p>
+            <p>Tenemos un equipo homologado en soldaduras de estructuras.</p>
             <div onClick={prevSlide} className="galery-pages-left">
               <HiArrowRight className='arrow' />
             </div>
           </div>
         </section>)}
-       
+        <br/>
+        <section className="section">
+          <div className='pre-container'>
+            <div style={activeMenu ? {transform: `translateX(-${currentSlide * 50}vw)`}:{transform: `translateX(-${currentSlide * 120}vw)`} } className="photo-container">
+              <div className="container">
+                <div className='image-container'>
+                  <div className='image-frame'>
+                    <Image src={foto2} />
+                  </div>
+                  <div className='image-frame'>
+                  <Image src={foto4} />
+                  </div>
+                </div>
+                <div className="image-tall">
+                <Image src={foto5} tall="tall" />
+                </div>
+              </div>
+              <div className="container">
+                <div>
+                  <div className='image-frame'>
+                    <Image src={foto4} />
+                  </div>
+                  <div className='image-frame'>
+                    <Image src={foto2} />
+                  </div>
+                </div>
+                <div className="image-tall">
+                <Image src={foto6} tall="tall" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="details-photo">
+            <h2>Puertas y Vallas</h2>
+            <p>Realizamos todo tipo de puertas y vallas a medida, nos amoldamos a cualquier requerimiento.</p>
+            <p>Se realiza primeramente un estudio para determinar si el espacio cumple con las medidas necesarias.</p>
+            <div onClick={nextSlide} className="galery-pages">
+              <HiArrowRight className='arrow' />
+            </div>
+          </div>
+        </section>
+        <br />
+        {activeMenu ? (
+        <section className="section">
+          <div className="details-photo">
+            <h2>Muebles y diseño</h2>
+            <p>No hay trabajo que no podamos realizar en hierro, ponédnos a prueba!</p>
+            <p>Barbacoas, mesas, chimeneas...</p>
+            <div onClick={prevSlide} className="galery-pages-left">
+              <HiArrowLeft className='arrow' />
+            </div>
+          </div>
+          <div className='pre-container'>
+            <div style={{transform: `translateX(-${currentSlide2 * 50}vw)`} } className="photo-container2">
+              <div className="container">
+                <div className='image-container'>
+                  <div className='image-frame'>
+                  <Image src={foto8} />
+                  </div>
+                  <div className='image-frame'>
+                  <Image src={foto3} />
+                  </div>
+                </div>
+                <div className="image-tall">
+                <Image src={foto1} tall="tall" />
+                </div>
+              </div>
+              <div className="container">
+                <div>
+                  <div className='image-frame'>
+                  <Image src={estructura} />
+                  </div>
+                  <div className='image-frame'>
+                  <Image src={foto10} />
+                  </div>
+                </div>
+                <div className="image-tall-2">
+                <Image src={foto9} tall="tall" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        ) : ( 
+        <section className="section">
+          <div className='pre-container'>
+            <div style={{transform: `translateX(-${currentSlide2 * 120}vw)`} } className="photo-container2">
+              <div className="container">
+                <div className='image-container'>
+                  <div className='image-frame'>
+                  <Image src={foto8} />
+                  </div>
+                  <div className='image-frame'>
+                  <Image src={foto3} />
+                  </div>
+                </div>
+                <div className="image-tall">
+                <Image src={foto1} tall="tall" />
+                </div>
+              </div>
+              <div className="container">
+                <div className='image-container'>
+                  <div className='image-frame'>
+                  <Image src={estructura} />
+                  </div>
+                  <div className='image-frame'>
+                  <Image src={foto10} />
+                  </div>
+                </div>
+                <div className="image-tall">
+                <Image src={foto9} tall="tall" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="details-photo">
+            <h2>Contención y estructuras</h2>
+            <p>Pequeñas estructuras de altillo o refuerzos, jardineras de diseño chapa corte, vallas, botelleros de tipo industrial.</p>
+            <p>Tenemos un equipo homologado en soldaduras de estructuras.</p>
+            <div onClick={prevSlide} className="galery-pages-left">
+              <HiArrowRight className='arrow' />
+            </div>
+          </div>
+        </section>)}
       </div>
       <div id="reseñas"></div>
     </div>

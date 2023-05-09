@@ -58,7 +58,6 @@
     align-items: flex-end;
     list-style: none;
     right: 20px;
-    
   }
   .menu-nav{
     cursor: pointer;
@@ -75,7 +74,7 @@
     top:110px;
     left:1000px;
     width: 100vw;
-    height: 200px;
+    height: 100vh;
     background-color: rgba(2, 2, 2, 0.7);
     font-size:1rem;
     border-radius: 5px;
@@ -109,4 +108,18 @@
     .title-container > h2{
       font-size: 18px;
     }
+    .container-nav{
+      position: relative;
+      width: 100vw;
+      height: 200px;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      align-items: flex-end;
+      list-style: none;
+      right: 20px;
+      top:30px;
+      z-index: 8000;
+    }
+    
   }

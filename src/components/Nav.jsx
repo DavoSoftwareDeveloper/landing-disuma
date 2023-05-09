@@ -36,16 +36,19 @@ function Nav() {
 
   useEffect(()=>{
     if ( !search ){
+            // eslint-disable-next-line no-undef
         gsap.set('#menu', {
           duration:0.5,
           x:"-1000px",
         })
+      // eslint-disable-next-line no-undef
       gsap.to('#menu', {
         duration:1,
         x:"0px",
       })
     }
     else{
+            // eslint-disable-next-line no-undef
       gsap.to('#menu', {
         duration:1,
         x:"-1000px",
