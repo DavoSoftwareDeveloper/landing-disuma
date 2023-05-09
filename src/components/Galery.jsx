@@ -313,9 +313,9 @@ function Galery() {
             </div>
           </div>
           <div className="details-photo">
-            <h2>Contención y estructuras</h2>
-            <p>Pequeñas estructuras de altillo o refuerzos, jardineras de diseño chapa corte, vallas, botelleros de tipo industrial.</p>
-            <p>Tenemos un equipo homologado en soldaduras de estructuras.</p>
+            <h2>Muebles y diseño</h2>
+            <p>No hay trabajo que no podamos realizar en hierro, ponédnos a prueba!</p>
+            <p>Barbacoas, mesas, chimeneas...</p>
             <div onClick={prevSlide} className="galery-pages-left">
               <HiArrowRight className='arrow' />
             </div>

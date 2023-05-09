@@ -9,6 +9,15 @@ function Footer() {
     <div className="footer">
       <div className='metal'></div>
       <div className="grid">
+                {/* ============ LocateUs Start here ============ */}
+                <div className="contacto">
+            <h2 >Detalles de contacto</h2>
+            <div >
+                <p>Mataró, Barcelona</p>
+                <p>Mobil: 659 43 79 99</p>
+                <p>e-mail: info@davodeveloper.com</p>
+            </div>
+        </div>    
         {/* ============ LogoIcon Start here ============ */}
         <div>
         <img className='logo' src={logo} alt='logoLight' />
@@ -21,15 +30,7 @@ function Footer() {
             <FaHome />
         </div>
         </div>
-        {/* ============ LocateUs Start here ============ */}
-        <div>
-            <h2 className=''>Detalles de contacto</h2>
-            <div className=''>
-                <p>Mataró, Barcelona</p>
-                <p>Mobil: 659 43 79 99</p>
-                <p>e-mail: info@davodeveloper.com</p>
-            </div>
-        </div>    
+
         {/* ============ Profile Start here ============ */}
         {/* <div>
             <h2 className=''> Detalles de contacto</h2>

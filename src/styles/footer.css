@@ -12,3 +12,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  .contacto{
+    margin-right: 50px;
+  }
