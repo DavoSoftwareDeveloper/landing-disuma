@@ -82,7 +82,7 @@ function Galery() {
                 </div>
               </div>
               <div className="container">
-                <div>
+                <div className='image-container'>
                   <div className='image-frame'>
                     <Image src={foto4} />
                   </div>
@@ -206,7 +206,7 @@ function Galery() {
                 </div>
               </div>
               <div className="container">
-                <div>
+                <div className='image-container'>
                   <div className='image-frame'>
                     <Image src={foto4} />
                   </div>
@@ -256,7 +256,7 @@ function Galery() {
                 </div>
               </div>
               <div className="container">
-                <div>
+                <div className='image-container'>
                   <div className='image-frame'>
                   <Image src={estructura} />
                   </div>
