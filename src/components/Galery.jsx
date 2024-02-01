@@ -10,6 +10,7 @@ function Galery() {
   const [screenSize, setScreenSize] = useState(undefined)
 
 
+  // eslint-disable-next-line react/prop-types
   const Image = ({src, tall}) => {
     const [show, setShow] = useState(false)
 

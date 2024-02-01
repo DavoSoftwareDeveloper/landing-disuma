@@ -7,7 +7,7 @@ function Footer() {
     <div className="footer">
       <div className='metal'></div>
       <div className="grid">
-                {/* ============ LocateUs Start here ============ */}
+
                 <div className="contacto">
             <h2 >Detalles de contacto</h2>
             <div >
@@ -16,7 +16,7 @@ function Footer() {
                 <p>e-mail: info@davodeveloper.com</p>
             </div>
         </div>    
-        {/* ============ LogoIcon Start here ============ */}
+
         <div>
         <img className='logo' src={logo} alt='logoLight' />
         <p className='register'>© Di-Suma</p>

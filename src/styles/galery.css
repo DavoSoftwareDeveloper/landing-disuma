@@ -141,7 +141,7 @@
   .image-modal{
     min-width: 190px;
     min-height: 350px;
-    object-fit: cover;
+    object-fit: contain;
     margin-right: 400px;
     margin-bottom: 170px;
   }
@@ -149,7 +149,8 @@
     display: inline;
     object-fit: cover;
     scale:0.38;
-    padding-right: 2920px;
+    padding-right:0px;
+    margin-left: -1100px;
   }
   
   @media screen and (max-width: 700px){
@@ -250,7 +251,7 @@
     .image-modal-2{
       min-width: 190px;
       min-height: 350px;
-      object-fit: cover;
+      object-fit: contain;
       scale:0.6;
       padding-right:0px;
       margin-left: -400px;
