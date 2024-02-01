@@ -1,5 +1,5 @@
 import '../styles/testimonials.css'
-import CardTestimonial from './CardTestimonial'
+import CardTestimonial from './subcomponents/CardTestimonial'
 
 function Testimonials() {
   
