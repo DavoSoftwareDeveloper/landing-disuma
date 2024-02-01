@@ -11,10 +11,11 @@ function Testimonials() {
         <hr className="hr"/>
         <p> Hecha un vistazo a lo que opinan nuestros clientes.</p>
       </section>
+      <div className="flex">
         <CardTestimonial />
         <CardTestimonial />
         <CardTestimonial />
-
+      </div>
       <div id="contacto"></div>
     </div>
   )

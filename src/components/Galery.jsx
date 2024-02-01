@@ -1,6 +1,7 @@
 import '../styles/galery.css'
 import {foto1, foto2, foto3, foto4, foto5, foto6, estructura, foto8, foto9, foto10}  from "../assets/index"
 import { HiArrowLeft, HiArrowRight } from 'react-icons/hi'
+import Image from "../components/subcomponents/Image"
 import { useState } from "react"
 import useScreenSize from '../hooks/useScreenSize'
 
@@ -10,27 +11,6 @@ function Galery() {
 
   const {activeMenu} = useScreenSize()
 
-  // eslint-disable-next-line react/prop-types
-  const Image = ({src, tall}) => {
-    const [show, setShow] = useState(false)
-
-    return (
-      <>
-      {show ? (
-        <>
-        <div onClick={()=> setShow(prev => !prev)} className='modal'>
-        <img className={tall ? "image-modal-2" : "image-modal"} src={src} alt="galery-photo" />
-        </div>
-        </>
-        ) : (
-          <>
-          <img onClick={()=> setShow(prev => !prev)} className={tall ? "image2" : "image"} src={src} alt="galery-photo" />
-          </>
-          )}
-      </>
-    )
-  }
-
   
   const nextSlide = () => {
     setCurrentSlide(currentSlide === 1 ? 0 : (prev) => prev + 1)
@@ -38,6 +18,7 @@ function Galery() {
   const prevSlide = () => {
     setCurrentSlide2(currentSlide2 === 1 ? 0 : (prev) => prev + 1)
   }
+
 
   return (
     <div className="galery">
@@ -48,6 +29,7 @@ function Galery() {
         <p> Tanto en hierro como en inoxidable.</p>
       </section>
       <div className="galery-content">
+
         <section className="section">
           <div className='pre-container'>
             <div style={activeMenu ? {transform: `translateX(-${currentSlide * 50}vw)`}:{transform: `translateX(-${currentSlide * 120}vw)`} } className="photo-container">

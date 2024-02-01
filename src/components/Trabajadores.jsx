@@ -1,6 +1,6 @@
 import '../styles/trabajador.css'
-import Trabajador from './Trabajador'
-import equipo from "../utils/data"
+import Trabajador from './subcomponents/Trabajador'
+import {equipo} from "../utils/data"
 
 function Trabajadores() {
 
