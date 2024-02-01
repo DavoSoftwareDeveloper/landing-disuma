@@ -1,4 +1,4 @@
-import { Footer, Header, Nav, Form, Galery, Testimonials, Trabajador } from "./components"
+import { Footer, Header, Nav, Form, Galery, Testimonials, Trabajadores } from "./components"
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
       <Galery />
       <Testimonials />
       <Form />
-      <Trabajador />
+      <Trabajadores />
       <Footer />
     </div>
   )

@@ -4,7 +4,7 @@ import Nav from "./Nav"
 import Galery from "./Galery"
 import Form from "./Form"
 import Testimonials from "./Testimonials"
-import Trabajador from "./Trabajador"
+import Trabajadores from "./Trabajadores"
 
 
 export {
@@ -14,5 +14,5 @@ export {
     Galery,
     Form,
     Testimonials,
-    Trabajador
+    Trabajadores
 }
