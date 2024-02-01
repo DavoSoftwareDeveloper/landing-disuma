@@ -2,33 +2,12 @@ import { useEffect, useState } from "react"
 import logo from "../assets/welder-logo.png"
 import { AiOutlineMenu } from 'react-icons/ai';
 import '../styles/nav.css'
+import useScreenSize from '../hooks/useScreenSize'
 
 function Nav() {
 
-  const [activeMenu, setActiveMenu] = useState(undefined)
-  const [screenSize, setScreenSize] = useState(undefined)
+  const {activeMenu} = useScreenSize()
   const [search, setSearch] = useState(false)
-
-  useEffect(()=>{
-    const handleResize = () => setScreenSize(window.innerWidth)
-
-    window.addEventListener('resize', handleResize)
-
-    handleResize()
-
-    return () => window.removeEventListener('resize', handleResize)
-  },[])
-
-
-  useEffect(()=>{
-    if(screenSize <= 800){
-      setActiveMenu(false)
-    } else {
-      setActiveMenu(true)
-    } 
-  },[screenSize])
-  
-
 
   const handleMenu = () => {
     setSearch( prev => !prev)

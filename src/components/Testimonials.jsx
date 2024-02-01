@@ -1,29 +1,9 @@
-import { useEffect, useState } from 'react'
 import '../styles/testimonials.css'
+import useScreenSize from '../hooks/useScreenSize'
 
 function Testimonials() {
-  const [activeMenu, setActiveMenu] = useState(true)
-  const [screenSize, setScreenSize] = useState(undefined)
-
-  useEffect(()=>{
-    const handleResize = () => setScreenSize(window.innerWidth)
-
-    window.addEventListener('resize', handleResize)
-
-    handleResize()
-
-    return () => window.removeEventListener('resize', handleResize)
-  },[])
-
-
-  useEffect(()=>{
-    if(screenSize <= 800){
-      setActiveMenu(false)
-    } else {
-      setActiveMenu(true)
-    } 
-  },[screenSize])
-
+  
+    const {activeMenu} = useScreenSize()
 
   return (
     <div className="testimonials">

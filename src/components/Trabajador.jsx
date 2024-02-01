@@ -1,7 +1,10 @@
+import useScreenSize from '../hooks/useScreenSize'
 
+function Trabajador() {
 
-function Trabajador({activeMenu}) {
-  return activeMenu ? (
+const {activeMenu} = useScreenSize()
+
+return activeMenu ? (
         <>
           <div className="content-trabajador">
             <div className="image-trabajador"></div>

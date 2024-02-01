@@ -1,14 +1,14 @@
 import '../styles/galery.css'
 import {foto1, foto2, foto3, foto4, foto5, foto6, estructura, foto8, foto9, foto10}  from "../assets/index"
 import { HiArrowLeft, HiArrowRight } from 'react-icons/hi'
-import { useEffect, useState } from "react"
+import { useState } from "react"
+import useScreenSize from '../hooks/useScreenSize'
 
 function Galery() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [currentSlide2, setCurrentSlide2] = useState(0)
-  const [activeMenu, setActiveMenu] = useState(true)
-  const [screenSize, setScreenSize] = useState(undefined)
 
+  const {activeMenu} = useScreenSize()
 
   // eslint-disable-next-line react/prop-types
   const Image = ({src, tall}) => {
@@ -31,24 +31,6 @@ function Galery() {
     )
   }
 
-  useEffect(()=>{
-    const handleResize = () => setScreenSize(window.innerWidth)
-
-    window.addEventListener('resize', handleResize)
-
-    handleResize()
-
-    return () => window.removeEventListener('resize', handleResize)
-  },[])
-
-
-  useEffect(()=>{
-    if(screenSize <= 800){
-      setActiveMenu(false)
-    } else {
-      setActiveMenu(true)
-    } 
-  },[screenSize])
   
   const nextSlide = () => {
     setCurrentSlide(currentSlide === 1 ? 0 : (prev) => prev + 1)
