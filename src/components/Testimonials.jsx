@@ -1,5 +1,6 @@
 import '../styles/testimonials.css'
 import CardTestimonial from './subcomponents/CardTestimonial'
+import {testigosData} from "../utils/testimonialsData"
 
 function Testimonials() {
   
@@ -12,9 +13,9 @@ function Testimonials() {
         <p> Hecha un vistazo a lo que opinan nuestros clientes.</p>
       </section>
       <div className="flex">
-        <CardTestimonial />
-        <CardTestimonial />
-        <CardTestimonial />
+        {testigosData.map((testigo, index) => {
+          return <CardTestimonial key={index} testigo={testigo}/>
+        })}
       </div>
       <div id="contacto"></div>
     </div>

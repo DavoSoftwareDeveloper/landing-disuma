@@ -1,9 +1,9 @@
 import '../styles/header.css'
 import { useState } from 'react'
 import {BsChevronCompactRight,BsChevronCompactLeft} from 'react-icons/bs'
-import foto from "../assets/exterior.jpeg"
-import foto5 from "../assets/exterior5.jpeg"
-import foto4 from "../assets/exterior4.jpeg"
+import foto from "../assets/trabajos/exterior.jpeg"
+import foto5 from "../assets/trabajos/exterior5.jpeg"
+import foto4 from "../assets/trabajos/exterior4.jpeg"
 
 function Header() {
 

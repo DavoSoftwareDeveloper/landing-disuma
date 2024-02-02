@@ -1,9 +1,9 @@
 import '../styles/trabajador.css'
 import Trabajador from './subcomponents/Trabajador'
-import {equipo} from "../utils/data"
+import {trabajadoresData} from "../utils/trabajadoresData"
 
 function Trabajadores() {
-
+  
   return (
     <div className="trabajador">
       <section className='heading'>
@@ -11,9 +11,9 @@ function Trabajadores() {
         <hr className="hr" />
         <p> Conoce a nuestro equipo!</p>
       </section>
-        <Trabajador trabajador={equipo[0]}/>
-        <Trabajador trabajador={equipo[1]}/>
-        <Trabajador trabajador={equipo[2]}/>
+      {trabajadoresData.map((equipo, index) => {
+        return <Trabajador key={index} trabajador={equipo}/>
+      })}
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import '../styles/galery.css'
-import {foto1, foto2, foto3, foto4, foto5, foto6, estructura, foto8, foto9, foto10}  from "../assets/index"
+import {foto1, foto2, foto3, foto4, foto5, foto6, estructura, foto8, foto9, foto10}  from "../assets/trabajos/index"
 import { HiArrowLeft, HiArrowRight } from 'react-icons/hi'
 import Image from "../components/subcomponents/Image"
 import { useState } from "react"

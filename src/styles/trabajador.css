@@ -8,27 +8,38 @@
   }
   .image-trabajador{
     border: 1px solid white;
-    width: 40%;
-    height: 300px;
+    width: auto;
+    height: 250px;
     border-radius: 10px;
+    overflow: hidden;
+    margin-left: 100px;
+  }
+  .image-trabajador > img{
+    object-fit: contain;
+    width: 260px
   }
   .texto-trabajador{
-    border: 1px solid white;
     width: 60%;
     height: 300px;
     border-radius: 10px;
+    padding-right: 50px;
   }
   
   .image-trabajador-movil{
-    border: 1px solid white;
-    width: 40%;
+    border: 3px solid rgb(43, 102, 118);
+    width: auto;
     height: 150px;
     border-radius: 10px;
+    overflow: hidden;
+  }
+  .image-trabajador-movil > img{
+    object-fit: contain;
+    width: 155px
   }
   .texto-trabajador-movil{
-    border: 1px solid white;
     width: 60%;
     height: 150px;
-    border-radius: 10px;
+    font-size: 11px;
+    
   }
   

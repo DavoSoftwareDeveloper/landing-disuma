@@ -127,7 +127,7 @@
       display: flex;
       justify-content: space-between;
       gap:8px;
-      bottom: 160px;
+      bottom: 360px;
       z-index: 6000;
       }
       .card{

@@ -3,6 +3,7 @@
     margin-top: 100px;
     width:100vw;
     height: auto;
+    margin-bottom: 150px;
   }
   .flex{
     display: flex;
@@ -22,31 +23,44 @@
     height:40%;
     border: 2px solid rgb(231, 231, 231);
     border-radius: 50%;
+    object-fit: contain;
+    overflow: hidden;
+
+  }
+  .circle-testi > img {
+    width: 165px
   }
   .text-testi{
+    padding: 10px;
     width: 100%;
-    height: 60%;
-    background-color: rgb(200, 199, 199);
+    height: auto;
+    background-color: rgb(131, 131, 131);
+    border-radius: 10px;
   }
 
   .testi-movil{
     padding:0 30px;
     width:80%;
-    height: 200px;
+    height: auto;
+    margin-bottom: 10px;
   }
   .circle-testi-movil{
     position: relative;
     margin-left: 25px;
-    margin-bottom: -30px;
-    width:25%;
-    height:40%;
+    margin-bottom: 10px;
+    width:6em;
+    height:50%;
     border: 2px solid rgb(231, 231, 231);
     border-radius: 50%;
+    overflow: hidden;
+  }
+  .circle-testi-movil > img {
+    display: block;
+    width: 100px;
   }
   .text-testi-movil{
     width: 100%;
-    height: 60%;
-    background-color: rgb(200, 199, 199);
-    border-radius: 10px;
-    padding: 0 10px;
+    height: auto;
+    background-color: rgb(131, 131, 131);
+    padding: 10px;
   }
