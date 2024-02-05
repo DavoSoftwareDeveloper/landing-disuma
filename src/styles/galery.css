@@ -8,11 +8,11 @@
   }
   
   .section{
-    width:95vw;
+    width:90vw;
     height: auto;
     display: flex;
     margin:20px;
-    margin-bottom: 40px;
+    margin-bottom: -100px;
   }
   .pre-container{
     position: relative;
@@ -67,7 +67,7 @@
   }
 
   .image2{
-    min-width: 120px;
+    max-width: 270px;
     height: 335px;
     object-fit:cover;
     border: 1px solid white;
@@ -78,20 +78,17 @@
     scale: 1.02;
   }
   .image-tall{
-    width:100%;
-    max-width: 30vw;
+    min-width: 28vw;
     height: 44.5vh;
   }
-  .image-tall-2{
-    width: 283px;
-    height: 44.5vh;
-  }
+
   .details-photo{
   width:90%;
   margin-left: 20px;
   }
   .details-photo > p{
     color:rgb(213, 211, 211);
+    max-width: 28em;
   }
   
   
@@ -132,7 +129,7 @@
   }
   .modal{
     position: absolute;
-    bottom: 30px;
+    bottom: 60px;
     width:100vw;
     height: 20vh;
     background-color: black;
@@ -143,24 +140,29 @@
    
   }
   .image-modal{
-    min-width: 190px;
+    position: relative;
+    top:-20px;
+    min-width: 490px;
     min-height: 350px;
-    object-fit: contain;
-    margin-right: 400px;
-    margin-bottom: 170px;
+    max-height: 450px;
+    object-fit: cover;
+    margin-right: 525px;
+    margin-bottom: 290px;
   }
   .image-modal-2{
-    display: inline;
-    object-fit: cover;
-    scale:0.38;
-    padding-right:0px;
-    margin-left: -1100px;
+    position: relative;
+    top:-200px;
+    scale:0.30;
+    margin-left: -1020px;
+    padding-bottom: 100px;
   }
   
   @media screen and (max-width: 700px){
     .section{
       position: relative;
       flex-direction: column;
+      margin-bottom: 0px;
+
     }
     .pre-container{
       position: relative;
@@ -211,7 +213,7 @@
     .image{
       min-width: 39vw;
       object-fit: cover;
-      min-height: 15vh;
+      min-height: 13.5vh;
     }
     .image2{
       max-width:48vw;
@@ -246,19 +248,24 @@
      
     }
     .image-modal{
-      min-width: 190px;
-      max-height: 210px;
-      object-fit: cover;
-      margin-top:150px;
-      margin-left: 370px;
-      scale: 2;
+      position: relative;
+      top:0px;
+      min-width: 380px;
+      min-height: 420px;
+      object-fit:cover;
+      margin-top:170px;
+      margin-left: 450px;
+      margin-bottom: 0px;
     }
     .image-modal-2{
       min-width: 655px;
-      max-height: 600px;
+      min-height: 850px;
       object-fit: cover;
-      scale:0.6;
+      scale:0.7;
       margin-left: -350px;
-      margin-top:110px;
+      margin-top:130px;
+      margin-bottom: -250px;
+      padding-right:-200px;
+      padding-bottom: 80px;
     }
   }
