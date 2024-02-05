@@ -1,7 +1,7 @@
 import '../styles/form.css'
 import { ToastContainer, toast } from 'react-toastify';
 import { useForm } from "react-hook-form"
-
+import emailjs from '@emailjs/browser'
 
 
 function Form() {
@@ -13,9 +13,14 @@ function Form() {
     reset,
   } = useForm()
 
-
   const onSubmit = (data) => {
       console.log(data)
+      emailjs.send("service_dd676tp","template_rgue9yb",{
+        name: watch("name"),
+        email: watch("email"),
+        number: watch("telefono"),
+        peticion: watch("peticion"),
+        },{ publicKey:"zfZclTIpt-QI0kGT9"});
       toast.success("mensaje enviado!")
       reset()
   }
