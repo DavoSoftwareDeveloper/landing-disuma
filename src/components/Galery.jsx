@@ -39,11 +39,12 @@ function Galery() {
             slideState={currentSlide}
             slideFn={nextSlide}
             dataSet={barandillasSet}
-          >
+            >
             <SectionGallery.SectionDescription />
             <SectionGallery.SectionImages />
           </SectionGallery>
         ) : (
+
           <SectionGallery
             slideState={currentSlide}
             slideFn={nextSlide}
@@ -52,7 +53,9 @@ function Galery() {
             <SectionGallery.SectionImages />
             <SectionGallery.SectionDescription />
           </SectionGallery>
-        )}
+
+        )
+        }
         <br />
         <SectionGallery
           slideState={currentSlide2}

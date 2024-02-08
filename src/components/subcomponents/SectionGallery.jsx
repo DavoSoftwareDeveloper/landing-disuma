@@ -28,13 +28,15 @@ function SectionDescription ({ slideState, slideFn, dataSet }) {
       <h2>{title}</h2>
       <p>{texto1}</p>
       <p>{texto2}</p>
-      <div onClick={slideFn} className="galery-pages">
         {slideState === 0 ? (
+      <div onClick={slideFn} className="galery-pages">
           <HiArrowRight className="arrow" />
-        ) : (
-          <HiArrowLeft className="arrow" />
-        )}
       </div>
+        ) : (
+          <div onClick={slideFn} className="galery-pages">
+          <HiArrowLeft className="arrow" />
+          </div>
+        )}
     </div>
   );
 }

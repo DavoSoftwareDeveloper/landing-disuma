@@ -9,7 +9,7 @@ const Image = ({src, tall}) => {
       {show ? (
         <>
         <div onClick={()=> setShow(prev => !prev)} className='modal'>
-        <img className={tall ? "image-modal-2" : "image-modal"} src={src} alt="galery-photo" />
+        <img className={"image-modal"} src={src} alt="galery-photo" />
         </div>
         </>
         ) : (

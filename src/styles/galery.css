@@ -32,18 +32,11 @@
     display: flex;
     position:relative;
     width:50vw;
-    height: auto;
+    height: 600px;
     gap: 10px;
+    overflow: hidden;
   }
 
-
-  .photo-container2{
-    position: relative;
-    display: flex;
-    gap:10px;
-    width:300vw;
-    transition: transform 0.5s;
-  }
   .image-frame {
     width:100%;
     max-width: 30vw;
@@ -117,70 +110,61 @@
     margin-left:12px;
   }
 
-  .showModal{
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(2,2,2,0.5);
-    z-index: 8000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
   .modal{
     position: absolute;
-    bottom: 60px;
-    width:100vw;
-    height: 20vh;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
+    left:-10px;
+    bottom: 200px;
+    margin-left:12px;
+    width:600px;
+    height: 66%;
+    border: 1px solid white;
+    overflow: hidden;
    
   }
   .image-modal{
-    position: relative;
-    top:-20px;
-    min-width: 490px;
-    min-height: 350px;
-    max-height: 450px;
+    position: absolute;
+    width:100%;
+    height: 100%;
     object-fit: cover;
-    margin-right: 525px;
-    margin-bottom: 290px;
   }
-  .image-modal-2{
-    position: relative;
-    top:-200px;
-    scale:0.30;
-    margin-left: -1020px;
-    padding-bottom: 100px;
-  }
+
   
   @media screen and (max-width: 700px){
     .section{
       position: relative;
       flex-direction: column;
       margin-bottom: 0px;
+      width:90vw;
+      height: auto;
+      display: flex;
+      margin:20px;
 
     }
     .pre-container{
       position: relative;
       display: flex;
       width:100vw;
-      overflow: hidden;
-      margin-bottom: 50px;
+      overflow-x: hidden;
+   
     }
     .container{
-      display: flex;
       position:relative;
       height: 350px;
-      margin-right: 65%;
-      gap:60px
+      width: 100vw;
+      display: flex;
+      margin-right: 60px;
+      gap: 10px;
+
     }
-    .galery-content{
-      position:relative;
+    .photo-container{
+      position: relative;
+      display: flex;
+      gap:10px;
+      width:270vw;
+      transition: transform 0.5s;
     }
+
     .galery-pages{
         position:absolute;
         top:280px;
@@ -192,22 +176,17 @@
       left:-84%;
   }
     .details-photo{
-      margin-top: 50px;
-    }
-    .photo-container2{
-      position: relative;
-      display: flex;
-      width:200vw;
-      transition: transform 0.5s;
+      margin-top: 70px;
     }
 
-    .image-frame{
-      width: 30vw;
-    }
     .image-container{
-      width: 100vw;
-      margin-right:-10px;
+      width: 50vw;
       height: 335px;
+    }
+    .image-tall{
+      min-width: 20vw;
+      height: 44.5vh;
+      margin-left: -38px;
     }
 
     .image{
@@ -216,56 +195,25 @@
       min-height: 13.5vh;
     }
     .image2{
-      max-width:48vw;
+      max-width:45vw;
       height: 335px;
       border: 1px solid white;
       object-fit: cover;
     }
-    .image-tall{
-      height: 42vh;
-    }
-
-    .showModal{
-      position: absolute;
-      width: 100vw;
-      height: 100vh;
-      background-color: rgba(2,2,2,0.5);
-      z-index: 8000;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
     .modal{
       position: absolute;
-      bottom: 10px;
-      width:97vw;
-      height: 40vh;
-      background-color: black;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 20px;
+      bottom: 0px;
+      width:335px;
+      height: 100%;
+      border: 1px solid white;
+      overflow: hidden;
      
     }
     .image-modal{
-      position: relative;
-      top:0px;
-      min-width: 380px;
-      min-height: 420px;
-      object-fit:cover;
-      margin-top:170px;
-      margin-left: 450px;
-      margin-bottom: 0px;
-    }
-    .image-modal-2{
-      min-width: 655px;
-      min-height: 850px;
+      position: absolute;
+      width:100%;
+      height: 100%;
       object-fit: cover;
-      scale:0.7;
-      margin-left: -350px;
-      margin-top:130px;
-      margin-bottom: -250px;
-      padding-right:-200px;
-      padding-bottom: 80px;
     }
+
   }
